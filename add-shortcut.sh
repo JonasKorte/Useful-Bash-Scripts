@@ -19,7 +19,9 @@ else
 
 		if [ "$5" == "-m" ];
 			then 
-				sudo mv "$2.desktop" /usr/share/applications
+				sudo cp "$2.desktop" /usr/share/applications
+				sudo cp "$2.desktop" ~/.local
+				sudo rm "$2.desktop"
 		else
 				sudo cp "$2.desktop" /usr/share/applications
 		fi
