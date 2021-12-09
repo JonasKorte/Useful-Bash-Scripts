@@ -19,11 +19,9 @@ else
 
 		if [ "$5" == "-m" ];
 			then 
-				sudo cp "$2.desktop" /usr/share/applications
-				sudo cp "$2.desktop" ~/.local
-				sudo rm "$2.desktop"
+				sudo mv "$2.desktop" "$HOME/.local"
 		else
-				sudo cp "$2.desktop" /usr/share/applications
+				sudo cp "$2.desktop" "$HOME/.local"
 		fi
  
 		echo "Successfully Created Desktop File!"
