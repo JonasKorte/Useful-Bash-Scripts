@@ -46,7 +46,7 @@ Again, replace "script.sh" with the name of the script you want to use (with ext
 
 ## Contributing
 ### New Script Ideas
-If you got an idea for another useful script you want me to implement, you can write an issue on this GitHub repository with "Script Request: " as the title, followed by a short description of what the script should do. You can expand more on what it does and how it should operate in the issue description.
+If you got an idea for another useful script you want me to implement, you can write an issue on this GitHub repository labeled "Script Request".
 <br/>
 <br/>
 If you know how to write Bash scripts, feel free to make a pull request containing the new script. I will test it and approve the pull request if it works properly. 
@@ -55,13 +55,13 @@ If you know how to write Bash scripts, feel free to make a pull request containi
 If you add a new script yourself, please make sure the script checks for a "-help" argument at the first position. and prints out "Usage: bash " followed by the script name and argument placeholders (formatted with all lowercase letters and dashes (-) between the words inside on arguments. After printing the usage section make sure to also print some details about the placeholder arguments (what to replace them with, with or without path/extension etc).
 
 ### Bug Report
-If one of the scripts is not working for you because of a bug, please create an issue on this GitHub repository with "Script Bug: " as the title, followed by a short description of what went wrong. You can further describe this problem in the issue description.
+If one of the scripts is not working for you because of a bug, please create an issue on this GitHub repository labeled "Script Bug".
 <br/>
 <br/>
 If you know how to write Bash scripts, feel free to make a pull request containing fixed script. I will test it and approve the pull request if it works properly.
 
 ### Script Changes
-If a script lacks a feature, please create an issue on this GitHub repository with "Script Change: " as the title, followed by a short description of what you want different. You can further describe this problem in the issue description.
+If a script lacks a feature, please create an issue on this GitHub repository labeled "Script Change".
 <br/>
 <br/>
 If (once again) you know how to write Bash scripts, feel free to make a pull request containing your version of the script. I will test it and approve the pull request if it works properly.
