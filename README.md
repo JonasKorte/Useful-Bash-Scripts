@@ -49,7 +49,10 @@ Again, replace "script.sh" with the name of the script you want to use (with ext
 If you got an idea for another useful script you want me to implement, you can write an issue on this GitHub repository with "Script Request: " as the title, followed by a short description of what the script should do. You can expand more on what it does and how it should operate in the issue description.
 <br/>
 <br/>
-If you know how to write Bash scripts, feel free to make a pull request containing the new script. I will test it and approve the pull request if it works properly.
+If you know how to write Bash scripts, feel free to make a pull request containing the new script. I will test it and approve the pull request if it works properly. 
+<br/>
+<br/>
+If you add a new script yourself, please make sure the script checks for a "-help" argument at the first position. and prints out "Usage: bash " followed by the script name and argument placeholders (formatted with all lowercase letters and dashes (-) between the words inside on arguments. After printing the usage section make sure to also print some details about the placeholder arguments (what to replace them with, with or without path/extension etc).
 
 ### Bug Report
 If one of the scripts is not working for you because of a bug, please create an issue on this GitHub repository with "Script Bug: " as the title, followed by a short description of what went wrong. You can further describe this problem in the issue description.
@@ -68,7 +71,7 @@ Here you can find the descriptions and usages for every script in the collection
 <br/>
 <br/>
 ### Add Shortcut
-Creates a .desktop file for an executable/script and moves/copies the .desktop file to "/usr/share/applications" to make it searchable.
+Creates a .desktop file for an executable/script and makes it searchable.
 
 #### Usage
 ```
@@ -94,6 +97,24 @@ Example Move (Godot Engine):
 ```
 bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.png -m
 ```
+
+### Remove Shortcut
+Removes a searchable .desktop file from /usr/share/applications and/or ~/.local
+
+#### Usage
+```
+bash remove-shortcut.sh desktop-file-name
+```
+
+
+Replace "desktop-file-name" with the name of the .desktop file (without extension)
+
+Example (Godot Engine):
+```
+bash remove-shortcut.sh godotengine
+```
+<br/>
+<br/>
 
 ### Add Path
 Adds a directory to PATH permanently. This means that if you want to open/run files from this directory you don't have to specify the path and name of the directory every time (this one is for you u/rexvansexron). 
