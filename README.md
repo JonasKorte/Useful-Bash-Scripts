@@ -87,16 +87,18 @@ Replace "icon-file" with the icon file (with extension and without the path).
 Note: If you want to move the .desktop file (and not keep a copy in the directory of the executable file), add "-m" at the end of the command.
 <br/>
 <br/>
-Example Copy (Godot Engine):
+#### Example Copy (Godot Engine):
 ```
 bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.png
 ```
 <br/>
 <br/>
-Example Move (Godot Engine):
+#### Example Move (Godot Engine):
 ```
 bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.png -m
 ```
+<br/>
+<br/>
 
 ### Remove Shortcut
 Removes a searchable .desktop file from /usr/share/applications and/or ~/.local
@@ -109,7 +111,7 @@ bash remove-shortcut.sh desktop-file-name
 
 Replace "desktop-file-name" with the name of the .desktop file (without extension)
 
-Example (Godot Engine):
+#### Example (Godot Engine):
 ```
 bash remove-shortcut.sh godotengine
 ```
@@ -137,7 +139,7 @@ echo $PATH
 The directory should now be in that list.
 <br/>
 <br/>
-Example (Useful-Bash-Scripts):
+#### Example (Useful-Bash-Scripts):
 ```
 bash add-shortcut.sh /home/jonas/Useful-Bash-Scripts
 ```
