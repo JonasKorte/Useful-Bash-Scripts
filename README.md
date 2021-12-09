@@ -87,18 +87,15 @@ Replace "icon-file" with the icon file (with extension and without the path).
 Note: If you want to move the .desktop file (and not keep a copy in the directory of the executable file), add "-m" at the end of the command.
 <br/>
 <br/>
-#### Example Copy (Godot Engine):
+#### Example (Godot Engine):
 ```
 bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.png
-```
-<br/>
-<br/>
-#### Example Move (Godot Engine):
-```
+or
 bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.png -m
 ```
 <br/>
 <br/>
+
 
 ### Remove Shortcut
 Removes a searchable .desktop file from /usr/share/applications and/or ~/.local
