@@ -138,5 +138,5 @@ The directory should now be in that list.
 <br/>
 #### Example (Useful-Bash-Scripts):
 ```
-bash add-shortcut.sh /home/jonas/Useful-Bash-Scripts
+bash add-path.sh /home/jonas/Useful-Bash-Scripts
 ```
