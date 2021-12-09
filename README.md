@@ -96,7 +96,7 @@ bash add-shortcut.sh godot.linuxbsd.tools.64 godotengine  "Godot Engine" icon.pn
 ```
 
 ### Add Path
-Adds a directory to PATH permanently.
+Adds a directory to PATH permanently. This means that if you want to open/run files from this directory you don't have to specify the path and name of the directory every time (this one is for you u/rexvansexron). 
 
 #### Usage
 ```
